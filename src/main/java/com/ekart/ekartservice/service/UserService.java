@@ -13,5 +13,5 @@ public interface UserService {
 
     List<User> saveAllUsers(List<User> users);
 
-    void deleteAll(User user);
+    void deleteUser(Long number);
 }

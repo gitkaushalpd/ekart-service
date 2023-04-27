@@ -27,4 +27,13 @@ public class ItemsServiceImpl implements ItemsService{
     public List<Items> saveAllItems(List<Items> items) {
         return itemsDao.saveAll(items);
     }
+
+    @Override
+    public void deleteItem(Items items) {
+        itemsDao.delete(items);
+    }
+
+
+
+
 }

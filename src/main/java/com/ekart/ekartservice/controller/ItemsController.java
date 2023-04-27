@@ -37,4 +37,9 @@ public class ItemsController {
         return  itemsService.saveAllItems(items);
     }
 
+    @DeleteMapping(value="/deleteItem")
+    void deleteItem(@PathVariable Items items){
+        itemsService.deleteItem(items);
+    }
+
 }

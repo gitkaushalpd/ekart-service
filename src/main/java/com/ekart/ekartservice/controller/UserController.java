@@ -37,11 +37,10 @@ public class UserController {
     List<User> saveAllUsers(@RequestBody List<User> users){
         return  userService.saveAllUsers(users);
      }
-
-
-     @DeleteMapping(value="/deleteAll")
-    void deleteAll(@PathVariable User user){
-         userService.deleteAll(user);
+     @DeleteMapping(value="/deleteUser")
+    void deleteUser(@RequestBody long num){
+         System.out.println(num);
+         userService.deleteUser(num );
      }
 
 }

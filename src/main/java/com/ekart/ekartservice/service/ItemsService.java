@@ -10,4 +10,6 @@ public interface ItemsService {
     List<Items> findAllItems();
 
     List<Items> saveAllItems(List<Items> items);
+
+    void deleteItem(Items items);
 }
