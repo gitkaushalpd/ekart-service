@@ -38,8 +38,9 @@ public class ItemsController {
     }
 
     @DeleteMapping(value="/deleteItem")
-    void deleteItem(@PathVariable Items items){
-        itemsService.deleteItem(items);
+    void deleteItem(@RequestBody String id){
+        System.out.println(id);
+        itemsService.deleteItem(id);
     }
 
 }

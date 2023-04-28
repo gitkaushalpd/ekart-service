@@ -37,8 +37,8 @@ public class UserController {
     List<User> saveAllUsers(@RequestBody List<User> users){
         return  userService.saveAllUsers(users);
      }
-     @DeleteMapping(value="/deleteUser")
-    void deleteUser(@RequestBody long num){
+     @PostMapping(value="/deleteUser")
+    void deleteUser(@RequestBody Long num){
          System.out.println(num);
          userService.deleteUser(num );
      }

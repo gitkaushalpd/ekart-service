@@ -11,5 +11,5 @@ public interface ItemsService {
 
     List<Items> saveAllItems(List<Items> items);
 
-    void deleteItem(Items items);
+    void deleteItem(String id);
 }

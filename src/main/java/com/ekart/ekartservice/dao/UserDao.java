@@ -14,7 +14,7 @@ import javax.persistence.Id;
 public interface UserDao extends JpaRepository<User,Long> {
 
 
-//   abstract void delete( Long number);
+
 
     @Modifying
     @Transactional

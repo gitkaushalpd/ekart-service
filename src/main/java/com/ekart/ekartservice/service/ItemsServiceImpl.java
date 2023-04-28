@@ -29,8 +29,8 @@ public class ItemsServiceImpl implements ItemsService{
     }
 
     @Override
-    public void deleteItem(Items items) {
-        itemsDao.delete(items);
+    public void deleteItem(String id) {
+        itemsDao.deleteItem(id);
     }
 
 
